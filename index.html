@@ -1,0 +1,366 @@
+<!--
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: NicsMusic
+Aluno 1: Nycolas Berocco - RA: 251191
+Aluno 2: Nicolas Gomes - RA: 251141
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NicsMusic | Home</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="bi bi-music-note-beamed"></i>
+                    NicsMusic
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <button id="btnTema" class="btn btn-outline-light ms-lg-3">
+                                🌙 Tema
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- CARROSSEL -->
+
+        <section class="hero">
+
+            <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0"
+                        class="active"></button>
+
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1"></button>
+
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="./img/imgShow1.webp" class="d-block w-100 banner-img"
+                            alt="Show musical com iluminação colorida">
+
+                        <div class="carousel-caption">
+                            <h2>Os Maiores Shows de 2026</h2>
+                            <p>Descubra os eventos musicais mais aguardados do ano.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./img/imgShow2.webp" class="d-block w-100 banner-img"
+                            alt="Artista se apresentando em festival">
+
+                        <div class="carousel-caption">
+                            <h2>Novos Álbuns</h2>
+                            <p>Conheça os lançamentos que estão dominando as plataformas.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./img/imgFone3.jpg" class="d-block w-100 banner-img"
+                            alt="Pessoa utilizando fones de ouvido">
+
+                        <div class="carousel-caption">
+                            <h2>Novos Talentos</h2>
+                            <p>Artistas que estão conquistando o cenário musical.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHome"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- APRESENTAÇÃO -->
+
+        <section class="container py-5">
+
+            <article class="text-center">
+
+                <h1 class="titulo-gradiente mb-4">
+                    Bem-vindo ao NicsMusic
+                </h1>
+
+                <p class="lead">
+                    O NicsMusic é um portal dedicado aos amantes da música.
+                    Aqui você encontra novidades, lançamentos, artistas em destaque,
+                    tendências do mercado musical e muito mais.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- DESTAQUES -->
+
+        <section class="container py-5">
+
+            <h2 class="text-center mb-5">
+                Categorias em Destaque
+            </h2>
+
+            <div class="row g-4">
+
+                <article class="col-md-4">
+
+                    <div class="card h-100 card-personalizado">
+
+                        <div class="card-body text-center">
+
+                            <i class="bi bi-mic-fill icone-destaque"></i>
+
+                            <h3 class="mt-3">
+                                Pop
+                            </h3>
+
+                            <p>
+                                Os maiores sucessos e artistas do cenário pop mundial.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="col-md-4">
+
+                    <div class="card h-100 card-personalizado">
+
+                        <div class="card-body text-center">
+
+                            <i class="bi bi-music-note-list icone-destaque"></i>
+
+                            <h3 class="mt-3">
+                                Rock
+                            </h3>
+
+                            <p>
+                                Bandas lendárias e os novos nomes do rock.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="col-md-4">
+
+                    <div class="card h-100 card-personalizado">
+
+                        <div class="card-body text-center">
+
+                            <i class="bi bi-headphones icone-destaque"></i>
+
+                            <h3 class="mt-3">
+                                Eletrônica
+                            </h3>
+
+                            <p>
+                                Tendências, festivais e DJs de destaque.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ESTATÍSTICAS -->
+
+        <section class="estatisticas">
+
+            <div class="container">
+
+                <div class="area-estatisticas">
+
+                    <div>
+                        <h3>500+</h3>
+                        <p>Artistas</p>
+                    </div>
+
+                    <div>
+                        <h3>1000+</h3>
+                        <p>Músicas</p>
+                    </div>
+
+                    <div>
+                        <h3>50+</h3>
+                        <p>Playlists</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CTA GALERIA -->
+
+        <section class="container py-5 text-center">
+
+            <h2>
+                Explore Novidades e Lançamentos
+            </h2>
+
+            <p>
+                Descubra os álbuns e artistas que estão em alta.
+            </p>
+
+            <a href="galeria.html" class="btn btn-laranja btn-lg">
+                Ver Galeria
+            </a>
+
+        </section>
+
+        <!-- CTA CONTATO -->
+
+        <section class="container py-5 text-center">
+
+            <h2>
+                Entre em Contato
+            </h2>
+
+            <p>
+                Tem alguma sugestão ou parceria?
+            </p>
+
+            <a href="contato.html" class="btn btn-outline-dark btn-lg">
+                Fale Conosco
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+
+    <footer class="rodape">
+
+        <div class="container">
+
+            <p>
+                Projeto desenvolvido para a AF - Linguagens de Programação.
+            </p>
+
+            <p>
+                Nycolas Berocco - RA: 251191
+            </p>
+
+            <p>
+                Nicolas Gomes - RA: 251141
+            </p>
+
+             <p>
+                AS009TSN2 - 3º Semestre
+            </p>
+            
+            <p>
+                © 2026 - Projeto acadêmico sem fins comerciais.
+            </p>
+
+            <p>
+                © NicsMusic.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- BOTÃO TOPO -->
+
+    <button id="btnTopo" class="btn-topo">
+        ↑
+    </button>
+
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
